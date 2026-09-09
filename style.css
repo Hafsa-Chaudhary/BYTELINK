@@ -1,0 +1,284 @@
+body {
+    background-color: #050914;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.name, .mainpurpose, .intro, .tabname, .tabpurpose, .resourcecard {
+    animation: globalReveal 0.8s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+}
+
+@keyframes globalReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(15px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);  
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #050914;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #16223F;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 23px;
+    color: #EBF1FF;
+}
+
+.header a:hover{
+    color: #a5bef4;
+}
+
+.nav-status {
+    font-size: 20px;
+    color: #EBF1FF;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #16223F;
+}
+
+.name {
+    padding-top: 120px;
+    font-size: 40px;
+    text-align: center;
+    color: #acb0b8;
+    font-weight: bolder;
+}
+
+.mainpurpose {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #687C9E;
+}
+
+.intro {
+    padding-top: 15px;
+    color: #9cb5c3;
+    text-align: center;
+    font-size: 23px;
+}
+
+.tabs {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tabs a {
+    color: #667ca3;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    opacity: 0; 
+    animation: tabEntrance 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.tabs a:hover {
+    color: #2b757c;
+    text-shadow: 0 0 10px rgba(92, 148, 251, 0.6); 
+}
+
+.tabs a:nth-child(1) { animation-delay: 0.1s; }
+.tabs a:nth-child(3) { animation-delay: 0.2s; }
+.tabs a:nth-child(5) { animation-delay: 0.3s; }
+.tabs a:nth-child(7) { animation-delay: 0.4s; }
+
+@keyframes tabEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);  
+    }
+}
+
+.d {
+    width: 350px;
+    color: #427c82;
+}
+
+.f {
+    margin-top: 30px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 3px;
+    color: #8991a0;
+}
+
+.tabname {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #5c94fb;
+    font-weight: bold;
+}
+
+.tabpurpose {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 23px;
+    color: #697994;
+    font-family: cursive;
+}
+
+.tab-section {
+    scroll-margin-top: 110px;
+    display: block;
+    clear: both;
+}
+
+.resourcecard {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #132141;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 50px;
+    width: 580px;
+    height: 340px;
+    box-shadow: 0 0 25px rgba(99, 120, 176, 0.6),
+        0 0 50px rgba(26, 46, 162, 0.3),
+        0 0 80px rgba(7, 87, 172, 0.1);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.resourcecard:hover {
+    transform: translateY(-8px); 
+        box-shadow: 0 20px 40px rgba(99, 120, 176, 0.5),
+                0 25px 70px rgba(26, 46, 162, 0.35),
+                0 35px 110px rgba(7, 87, 172, 0.2);
+}
+
+.resourcename {
+    text-align: center;
+    font-size: x-large;
+    color: #6e7ea0;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.resourceinformation {
+    margin: 15px;
+    font-size: large;
+    color: #a2a4a9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.actionbtn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: large;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #8fa0bc;
+    background-color: #0b111e;
+    border: 1px solid#233554;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.actionbtn:hover {
+    color: #050914;
+    background-color: #4a81ff;
+    box-shadow: 0 0 20px rgba(76, 106, 156, 0.25);
+}
+
+/*Responsive*/
+
+/* Mobile Phones*/
+
+@media (max-width: 575px){
+    body{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .resourcecard{
+        width: auto;
+        height: auto;
+    }
+}
+
+/*Tablets*/
+
+@media (max-width: 800px){
+
+    body{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .resourcecard{
+        width: auto;
+    }
+}
+
+@media (max-width: 1200px){
+
+    body{
+        padding-left: 15px;
+        padding-right:15px;
+    }
+
+    .resourcecard{
+        width: auto;
+    }
+}
+
+@media (max-width: 1300px){
+
+    body{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .resourcecard{
+        width: auto;
+    }
+}
+
