@@ -239,7 +239,8 @@ hr {
     }
 
     header{
-        display:flex;}
+        display:block;
+    }
     
     .resourcecard{
         width:500px ;
