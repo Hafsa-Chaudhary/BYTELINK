@@ -237,9 +237,12 @@ hr {
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    header{
+        display:flexbox;}
     
     .resourcecard{
-        width: auto;
+        width: ;
         height: auto;
     }
 }
