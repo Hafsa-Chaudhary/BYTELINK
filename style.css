@@ -243,7 +243,7 @@ hr {
     }
 
     .header a{
-        font-size:15px;}
+        font-size:10px;}
     
     .resourcecard{
         width:auto ;
@@ -282,6 +282,7 @@ hr {
     body{
         padding-left: 15px;
         padding-right: 15px;
+        
     }
 
     .resourcecard{
