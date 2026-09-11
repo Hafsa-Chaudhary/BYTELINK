@@ -239,11 +239,11 @@ hr {
     }
 
     header{
-        display:flexbox;}
+        display:flex;}
     
     .resourcecard{
-        width: ;
-        height: auto;
+        width:500px ;
+        height:auto;
     }
 }
 
@@ -281,7 +281,7 @@ hr {
     }
 
     .resourcecard{
-        width: auto;
+        width:1200px;
     }
 }
 
