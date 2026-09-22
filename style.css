@@ -246,7 +246,7 @@ hr {
         font-size:16px;}
     
     .resourcecard{
-        width:auto ;
+        max-width:90% ;
         height:auto;
     }
 }
@@ -261,7 +261,7 @@ hr {
     }
 
     .resourcecard{
-        width:auto;
+       max-width:90%;
     }
 }
 
@@ -273,7 +273,7 @@ hr {
     }
 
     .resourcecard{
-        width:auto;
+        max-width:90%;
     }
 }
 
@@ -286,7 +286,7 @@ hr {
     }
 
     .resourcecard{
-        width:auto;
+        max-width:90%;
     }
 }
 
